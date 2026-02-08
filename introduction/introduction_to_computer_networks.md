@@ -1556,12 +1556,4 @@ All enabled by:
   • Layered architecture (managing complexity)
 ```
 
-**What's next:**
-
-- OSI and TCP/IP models in detail
-- Physical and data link layers
-- Network layer and routing
-- Transport layer and reliability
-- Application layer protocols
-
 Networking is the invisible infrastructure that connects our digital world. Understanding it means understanding how the Internet—and all modern computing—actually works.
