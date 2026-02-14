@@ -1,4 +1,4 @@
-# Data Link Layer (Layer 2) — Deep Study Notes
+# Data Link Layer (Layer 2)
 
 ---
 
