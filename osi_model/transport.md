@@ -1,4 +1,4 @@
-# Transport Layer (Layer 4) — Deep Study Notes
+# Transport Layer (Layer 4)
 
 ---
 
