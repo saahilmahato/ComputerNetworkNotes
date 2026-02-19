@@ -1,4 +1,4 @@
-# 🗂️ File Transfer Protocols — Deep Study Notes
+# 🗂️ File Transfer Protocols
 
 ---
 

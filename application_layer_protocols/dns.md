@@ -1,4 +1,4 @@
-# 🌐 DNS — Deep Study Notes
+# 🌐 DNS
 
 ---
 

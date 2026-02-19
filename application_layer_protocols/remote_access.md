@@ -1,4 +1,4 @@
-# 🧠 Remote Access Protocols — Deep Study Notes
+# 🧠 Remote Access Protocols
 
 ---
 

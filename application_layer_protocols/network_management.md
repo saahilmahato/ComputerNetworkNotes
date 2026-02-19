@@ -1,4 +1,4 @@
-# 🧠 Computer Networks — Deep Study Notes
+# 🧠 Computer Networks
 
 ---
 
