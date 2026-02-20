@@ -97,7 +97,7 @@ Application gets IP → opens TCP connection
 ```
 ┌──────────────────────────────────────┐
 │  Transaction ID (16 bits)            │  Matches query to response
-│  Flags (QR, Opcode, AA, TC, RD, RA) │  Query or response? Recursion?
+│  Flags (QR, Opcode, AA, TC, RD, RA)  │  Query or response? Recursion?
 │  QDCOUNT  │  ANCOUNT                 │  # of questions / answers
 │  NSCOUNT  │  ARCOUNT                 │  # of authority / additional records
 └──────────────────────────────────────┘

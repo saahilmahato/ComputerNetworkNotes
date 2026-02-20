@@ -261,7 +261,7 @@ Why UDP? SNMP is designed for monitoring a potentially degraded network. Using T
 ```
 NMS                           Agent (e.g., router)
  |                                 |
- |---[GET: OID 1.3.6.1.2.1.1.1]-->|   "What is your sysDescr?"
+ |---[GET: OID 1.3.6.1.2.1.1.1]--->|   "What is your sysDescr?"
  |                                 |
  |<--[RESPONSE: "Cisco IOS 15.x"]--|
  |                                 |

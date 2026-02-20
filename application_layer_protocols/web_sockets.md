@@ -104,11 +104,11 @@ Think of WebSockets as **installing a pipe between two buildings**. HTTP means s
 ┌─────────────────────────────────────────────────────────┐
 │              APPLICATION LAYER (L7)                     │
 │                                                         │
-│   ┌─────────────┐   ┌──────────────────────────────┐   │
-│   │    HTTP/1.1  │   │        WebSocket Protocol    │   │
-│   │  (for init  │──►│  (takes over after upgrade)  │   │
-│   │  handshake) │   │                              │   │
-│   └─────────────┘   └──────────────────────────────┘   │
+│   ┌─────────────┐   ┌──────────────────────────────┐    │
+│   │    HTTP/1.1 │   │        WebSocket Protocol    │    │
+│   │  (for init  │──►│  (takes over after upgrade)  │    │
+│   │  handshake) │   │                              │    │
+│   └─────────────┘   └──────────────────────────────┘    │
 │                              │                          │
 │                    ┌─────────▼──────────┐               │
 │                    │  Your App Data     │               │
@@ -255,11 +255,11 @@ After the 101, HTTP is done. Every subsequent byte on this TCP connection is a W
 │N│V│V│V│       │S│               │  (if payload len == 127: 64b) │
 │ │1│2│3│       │K│               │                               │
 ├─┴─┴─┴─┴───────┴─┴───────────────┴───────────────────────────────┤
-│                 Masking key (32 bits) — only if MASK=1           │
-├──────────────────────────────────────────────────────────────────┤
-│                 Payload data (variable length)                   │
-│                 XOR'd with masking key if MASK=1                 │
-└──────────────────────────────────────────────────────────────────┘
+│                 Masking key (32 bits) — only if MASK=1          │
+├─────────────────────────────────────────────────────────────────┤
+│                 Payload data (variable length)                  │
+│                 XOR'd with masking key if MASK=1                │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 **Field-by-field breakdown:**
@@ -781,7 +781,7 @@ Client sends (inside TLS):
 │ Host: chat.example.com                                      │
 │ Upgrade: websocket                                          │
 │ Connection: Upgrade                                         │
-│ Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==               │
+│ Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==                 │
 │ Sec-WebSocket-Version: 13                                   │
 │ Sec-WebSocket-Protocol: chat-v2                             │
 │ Origin: https://example.com                                 │
@@ -797,7 +797,7 @@ Server responds:
 │ HTTP/1.1 101 Switching Protocols                            │
 │ Upgrade: websocket                                          │
 │ Connection: Upgrade                                         │
-│ Sec-WebSocket-Accept: HqR/DVt+B7K9Ls/HHQIAA=              │
+│ Sec-WebSocket-Accept: HqR/DVt+B7K9Ls/HHQIAA=                │
 │ Sec-WebSocket-Protocol: chat-v2                             │
 └─────────────────────────────────────────────────────────────┘
 
